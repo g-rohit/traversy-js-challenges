@@ -16,4 +16,9 @@ test('Performing arithmetic operations using the calculator function', () => {
 
   // Division
   expect(calculator(num1, num2, '/')).toBeCloseTo(0.7143, 4);
+
+  // incorrect operator
+  expect(calculator(num1, num2, '^')).toBe("Invalid operator, please enter a valid operator like: +, -, * or /");
+
+  
 });
