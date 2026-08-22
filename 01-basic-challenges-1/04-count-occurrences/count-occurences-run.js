@@ -1,5 +1,14 @@
 const countOccurrences = require('./count-occurrences');
 
-const result = countOccurrences('hellLo world', 'l');
+const testCases = [
+  { text: 'hello world', character: 'l' },
+  { text: 'programming', character: 'm' },
+  { text: 'banana', character: 'a' },
+  { text: '', character: 'a' },
+  { text: 'JavaScript', character: 'a' },
+];
 
-console.log(result);
+testCases.forEach(({ text, character }) => {
+  const result = countOccurrences(text, character);
+  console.log(`'${character}' occurs ${result} time(s) in '${text}'`);
+});
