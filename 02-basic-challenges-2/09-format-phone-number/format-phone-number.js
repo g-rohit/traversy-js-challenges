@@ -52,3 +52,6 @@ module.exports = formatPhoneNumber;
 // slice method takes params like slice(start index, stop index+1) --> if we want to grab first 3 chars we will say slice(0,3), 
 // let formattedNumber = `(${givenNumber.slice(0,3).join('')}) ${givenNumber.slice(3,6).join('')}-${givenNumber.slice(6).join('')}`
 // return formattedNumber;
+
+
+// 18/09/26, 00:55
