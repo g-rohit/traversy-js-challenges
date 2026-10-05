@@ -73,3 +73,7 @@ module.exports = isValidIPv4;
 
 // Space complexity:
 // - The function creates an array from input.split('.'), plus a few extra variables. This uses O(n) auxiliary space, i.e., O(n) where n is the number of segments (up to 4 for a valid IPv4, but in general proportional to the number of segments).
+
+// 05/10/26, 20:37
+// Learned that the original solution by brad used ParseIn and converted to string to check the converted number and the given string, that till sort the logic for leading zeros for which i spent some time to write new logics --
+// parseInt(octet).toString()
