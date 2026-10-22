@@ -1,10 +1,10 @@
-function sumUpTo(n){
+function sumUpTo(num){
 
-  if(n===1){
+  if(num===1){
     return 1
   }
   
-  return n + sumUpTo(n-1)
+  return num + sumUpTo(num-1)
   
 }
 

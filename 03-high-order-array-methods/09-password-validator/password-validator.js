@@ -29,3 +29,25 @@ module.exports = validatePassword;
 
 // Space complexity:
 // - The function uses a constant number of extra variables and helper functions. The Array.from(givenInput) calls inside each check create temporary arrays of length n, but they are scoped to each function call and freed afterwards. The peak additional space is O(n) due to those temporary arrays, but if you consider typical streaming checks without materializing arrays, it would be O(1). In this implementation, it is O(n) due to the temporary arrays created during the checks.
+
+
+// 10/10/26, 15:23
+
+// Method 2 as per video
+// function validatePassword(givenInput){  
+//   if (givenInput.length < 8) { return false };
+
+// const hasUpperCase = givenInput
+// .split('')
+// .some((eachLetter)=> eachLetter === eachLetter.toUpperCase() && eachLetter != eachLetter.toLowerCase())  
+
+// const hasLowerCase = givenInput
+// .split('')
+// .some((eachLetter)=> eachLetter === eachLetter.toLowerCase() && eachLetter != eachLetter.toUpperCase())  
+
+// const hasNumber = givenInput
+// .split('')
+// .some(eachLetter => !isNaN(parseInt(eachLetter, 10)))
+
+// return hasUpperCase && hasLowerCase && hasNumber;
+// }  
